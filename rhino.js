@@ -111,4 +111,25 @@ if (packageName == 'com.meitu.meiyancamera') {
     common.hookMethod('com.lm.components.utils.u', 'EY', null, function (param) {
         param.setResult(true);
     });
+} else if (packageName == 'com.qihoo.magic') {
+    //360分身大师本地VIP破解
+    common.hookMethod('com.qihoo.magic.account.Membership', 'f', ['I'], function (param) {
+        param.setResult(true);
+    });
+    common.hookMethod('com.qihoo.magic.account.Membership', 'e', ['I'], function (param) {
+        param.setResult(true);
+    });
+    common.hookMethod('com.qihoo.magic.account.Membership', 'd', ['I'], function (param) {
+        param.setResult(true);
+    });
+    common.hookMethod('com.qihoo.magic.account.Membership', 'c', ['I'], function (param) {
+        param.setResult(true);
+    });
+    common.hookMethod('com.qihoo.magic.account.Membership', 'b', ['I'], function (param) {
+        param.setResult(true);
+    });
+    common.hookMethod('com.qihoo.magic.account.Membership', 'b', null, function (param) {
+        param.setResult(java.lang.Integer.valueOf(5));
+    });
 }
+
